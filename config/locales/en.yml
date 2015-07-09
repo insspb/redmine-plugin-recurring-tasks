@@ -29,6 +29,7 @@ en:
   field_interval_modifier: "Interval modifier"
   field_fixed_schedule: "Fixed schedule?"
   field_recurrence: "Recurrence"
+  field_recurrence_schedule: "Recurrence schedule"
   field_please_select: "--- Please select ---"
   
   interval_day:   "day"
@@ -48,6 +49,6 @@ en:
   help_add_general_recurring_task: "You may find it easier to add recurrence via the specific issue's page."
 
   # settings (admins)
-  label_recurring_tasks_setting_show_top_menu: "Display top menu?"
+  label_recurring_tasks_setting_show_top_menu: "Display link in top menu"
   label_recurring_tasks_setting_reopen_issue: "Reopen issue on recurrence?"
   label_recurring_tasks_setting_journal_user: "Attribute issue journals to user id:"

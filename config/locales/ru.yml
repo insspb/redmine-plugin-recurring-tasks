@@ -1,10 +1,11 @@
 # Russian strings go here for Rails i18n
 ru:
-  label_recurring_tasks:    "Повтор задач"
+  label_recurring_tasks:    "Регламентные задачи"
+  label_recurring_task:     "Регламентные задача"
   label_current_issue:      "Текущая задача для повторения"
   label_recurrence_pattern: "Повтор каждые"
-  label_add_recurring_task: "Добавить повторение задачи"
-  label_no_recurring_tasks: "В системе не найдено повторяющихся задач."
+  label_add_recurring_task: "Добавить"
+  label_no_recurring_tasks: "В системе не найдено регламентных задач."
   label_next_scheduled_run: "Следующий плановый запуск"
   label_no_recurrence:      "Нет повторения."
   label_no_project:         "Нет проекта."  
@@ -19,22 +20,42 @@ ru:
   label_assigned_to: "Назначена"
 
   error_invalid_interval:   "Указанный интервал неверен. "
+  error_invalid_modifier:   "Interval modifier provided is invalid."
   error_recurring_task_not_found: "Невозможно найти повторяющуюся задачу. "
   error_recurring_task_could_not_remove: "Невозможно удалить повторение задачи. "
   
   field_interval_number: "Интервал (число)"
   field_interval_unit: "Интервал (элемент)"
+  field_interval_modifier: "Interval modifier"
   field_fixed_schedule: "Фиксированный график?"
   field_recurrence: "Повторение"
+  field_recurrence_schedule: "Расписание повторов"
+  field_please_select: ""
   
   interval_day:  "день"
   interval_week: "неделя"
   interval_month: "месяц"
   interval_year: "год"
 
-  recurring_task_created: "Повторяющаяся задача создана. "
-  recurring_task_saved: "Повторяющаяся задача сохранена. "
-  recurring_task_removed: "Повторяющаяся задача удалена. "
+  month_modifier_day_from_first: "on %{days_from_bom} day"
+  month_modifier_day_to_last: "on %{days_to_eom} to last day"
+  month_modifier_dow_from_first: "on %{dows_from_bom} %{day_of_week}"
+  month_modifier_dow_to_last: "on %{dows_to_eom} to last %{day_of_week}"
+  
+  recurring_task_created: "Повторяющаяся задача создана."
+  recurring_task_saved: "Повторяющаяся задача сохранена."
+  recurring_task_removed: "Повторяющаяся задача удалена."
 
+  help_add_general_recurring_task: "Вам будет значительно проще добавить повторение со страницы конкретной задачи."
+  
   # settings (admins)
-  label_recurring_tasks_setting_show_top_menu: "отобразить главное меню?"
+  label_recurring_tasks_setting_show_top_menu: "Отображать ссылку в верхнем меню"
+  label_recurring_tasks_setting_reopen_issue: "При повторении открывать задачу заново"
+  label_recurring_tasks_setting_journal_user: "Создавать задачи от имени пользователя с id:"
+  
+  permission_add_issue_recurrence: "Добавлять регламентные задания"
+  permission_view_issue_recurrence: "Просматривать регламентные задания"
+  permission_edit_issue_recurrence: "Редактировать регламентные задания"
+  permission_delete_issue_recurrence: "Удалять регламентные задания"
+  
+  

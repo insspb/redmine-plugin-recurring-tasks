@@ -3,7 +3,7 @@
   <% if User.current.allowed_to?(:add_issue_recurrence, project) %>
       <div class="contextual"><%= link_to(l(:label_add_recurring_task), new_recurring_task_path(:issue_id => issue.id, :project_id => project.id)) %></div>
   <% end %>
-  <p><strong><%= l(:field_recurrence).pluralize(2) %></strong></p>
+  <p><strong><%= l(:field_recurrence_schedule) %></strong></p>
   <% if issue.recurs? %>
     <table class="list" style="border-width: 0;">
     <tbody>
